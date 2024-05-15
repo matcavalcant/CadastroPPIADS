@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <link rel="stylesheet" href="estilo.css">
     <div class="container m-2">
         <legend>Cadastro de pacientes</legend>
         <form method="GET" action='/cadastroPacientes'>
@@ -25,8 +26,14 @@
                 <div class="col-md-4 mb-3">
                     <label for="sexo">Sexo</label>
                     <div class="input-group">
-                        <input type="text" class="form-control" id="sexo" name="sexo" placeholder="Sexo"
-                            aria-describedby="inputGroupPrepend2" required>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="sexo" id="masculino" value="Masculino" required>
+                            <label class="form-check-label" for="masculino">Masculino</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="sexo" id="feminino" value="Feminino" required>
+                            <label class="form-check-label" for="feminino">Feminino</label>
+                        </div>
                     </div>
                 </div>
             </div>
