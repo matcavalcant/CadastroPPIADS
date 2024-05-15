@@ -1,0 +1,32 @@
+{
+  "name": "cadastroppiads",
+  "version": "1.0.0",
+  "description": "Cadastro - HTML",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matcavalcant/CadastroPPIADS.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "HTPP",
+    "GET",
+    "programação",
+    "servidor"
+  ],
+  "author": "Mateus Cavalcante",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matcavalcant/CadastroPPIADS/issues"
+  },
+  "homepage": "https://github.com/matcavalcant/CadastroPPIADS#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
