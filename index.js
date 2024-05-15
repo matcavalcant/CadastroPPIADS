@@ -1,5 +1,4 @@
 import express from 'express'
-
 import path from 'path';
 
 const porta = 3000;
@@ -7,8 +6,9 @@ const host = '0.0.0.0';
 
 var listarPacientes = [];
 
-
 const app = express();
+
+app.use(express.static(path.join(process.cwd(), 'publico')));
     
 app.use('/cadastroPacientes', (req,resp)=>{
 
@@ -77,10 +77,6 @@ app.use('/listarPacientes', (req,resp)=>{
     resp.write('</html>');
     resp.end();
 });
-
-
-
-app.use(express.static('./publico'))
 
 app.listen(porta, host, () => {
     console.log(`Servidor executando na porta http://${host}:${porta}`);
